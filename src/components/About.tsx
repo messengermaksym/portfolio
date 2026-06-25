@@ -1,10 +1,10 @@
 import { Users, Code2, Target } from 'lucide-react';
 
-const stats = [
-  { value: "5+", label: "Років у розробці" },
-  { value: "50K+", label: "Рядків коду" },
-  { value: "100%", label: "Унікальність" }
-];
+// const stats = [
+//   { value: "5+", label: "Років у розробці" },
+//   { value: "50K+", label: "Рядків коду" },
+//   { value: "100%", label: "Унікальність" }
+// ];
 
 const values = [
   {
@@ -41,14 +41,14 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-4 mt-8">
+          {/* <div className="grid grid-cols-3 gap-4 mt-8">
             {stats.map((stat, index) => (
               <div key={index}>
                 <div className="font-display text-2xl md:text-3xl font-bold text-primary">{stat.value}</div>
                 <div className="text-xs text-text-muted mt-1 uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Right Column: Values / Philosophy */}

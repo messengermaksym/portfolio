@@ -8,12 +8,18 @@ const Contact = () => {
     setStatus('sending');
     
     const formData = new FormData(e.currentTarget);
-    // Replace YOUR_ACCESS_KEY with actual Web3Forms access key
-    // For now it's a dummy integration that pretends to send
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    const accessKey = import.meta.env.VITE_WEB3FORMS_KEY || "YOUR_ACCESS_KEY_HERE";
+    formData.append("access_key", accessKey);
 
     try {
-      /*
+      if (accessKey === "YOUR_ACCESS_KEY_HERE") {
+        // Fallback for simulation if key is not configured
+        setTimeout(() => {
+          setStatus('success');
+        }, 1000);
+        return;
+      }
+
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formData
@@ -24,13 +30,6 @@ const Contact = () => {
       } else {
         setStatus('error');
       }
-      */
-      
-      // Simulate network request
-      setTimeout(() => {
-        setStatus('success');
-      }, 1000);
-      
     } catch (error) {
       setStatus('error');
     }

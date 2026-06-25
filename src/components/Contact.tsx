@@ -75,6 +75,14 @@ const Contact = () => {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+              {/* Honeypot Spam Protection */}
+              <input 
+                type="checkbox" 
+                name="botcheck" 
+                className="hidden" 
+                style={{ display: 'none' }} 
+              />
+
               <div className="flex flex-col gap-2">
                 <label htmlFor="name" className="text-sm font-bold text-primary">Ваше ім'я / Компанія</label>
                 <input 

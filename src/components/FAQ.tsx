@@ -45,7 +45,7 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="py-20 px-6 max-w-4xl mx-auto border-b utilitarian-border">
+    <section id="faq" className="py-12 md:py-20 px-6 max-w-4xl mx-auto border-b utilitarian-border">
       <div className="text-center mb-12">
         <div className="inline-flex items-center gap-2 px-3 py-1 border utilitarian-border bg-white rounded-full text-xs font-display text-accent mb-4">
           <HelpCircle className="w-3.5 h-3.5" />

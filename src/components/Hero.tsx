@@ -2,9 +2,9 @@
 
 const Hero = () => {
   return (
-    <section className="py-20 px-6 max-w-6xl mx-auto border-b utilitarian-border">
-      <h1 className="text-5xl md:text-7xl mb-6">
-        Створюємо сайти, які <br/><span className="text-accent italic">працюють</span>.
+    <section className="py-12 md:py-20 px-6 max-w-6xl mx-auto border-b utilitarian-border">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6">
+        Створюємо сайти, які <br className="hidden md:inline" /><span className="text-accent italic">працюють</span>.
       </h1>
       <p className="text-xl text-text-muted max-w-2xl mb-8">
         VibeFlow Studio — розробка вебсайтів "під ключ" для українського бізнесу. 

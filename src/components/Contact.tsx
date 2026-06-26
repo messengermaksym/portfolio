@@ -36,7 +36,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 max-w-6xl mx-auto border-b utilitarian-border">
+    <section id="contact" className="py-12 md:py-20 px-6 max-w-6xl mx-auto border-b utilitarian-border">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
           <h2 className="text-4xl mb-6">Готові почати?</h2>

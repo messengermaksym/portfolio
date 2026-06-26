@@ -25,7 +25,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="py-20 px-6 max-w-6xl mx-auto border-b utilitarian-border">
+    <section id="benefits" className="py-12 md:py-20 px-6 max-w-6xl mx-auto border-b utilitarian-border">
       <div className="flex flex-col md:flex-row justify-between items-start mb-12">
         <div className="max-w-xl">
           <span className="font-display text-accent text-sm tracking-wider uppercase">Результат для бізнесу</span>
@@ -38,7 +38,7 @@ const Benefits = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {benefits.map((benefit, index) => (
-          <div key={index} className="utilitarian-card flex gap-5 items-start">
+          <div key={index} className="utilitarian-card flex flex-col sm:flex-row gap-4 sm:gap-5 items-start">
             <div className="p-3 border utilitarian-border bg-background shrink-0">
               {benefit.icon}
             </div>

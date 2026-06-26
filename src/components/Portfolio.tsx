@@ -30,7 +30,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-20 px-6 max-w-6xl mx-auto border-b utilitarian-border">
+    <section id="portfolio" className="py-12 md:py-20 px-6 max-w-6xl mx-auto border-b utilitarian-border">
       <div className="flex flex-col md:flex-row justify-between items-start mb-12">
         <h2 className="text-4xl">Останні роботи</h2>
         <p className="max-w-md text-text-muted mt-4 md:mt-0">

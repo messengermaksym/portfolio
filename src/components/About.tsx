@@ -26,7 +26,7 @@ const values = [
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-6 max-w-6xl mx-auto border-b utilitarian-border">
+    <section id="about" className="py-12 md:py-20 px-6 max-w-6xl mx-auto border-b utilitarian-border">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         {/* Left Column: Heading and Stats */}
         <div className="lg:col-span-5 flex flex-col justify-between">
